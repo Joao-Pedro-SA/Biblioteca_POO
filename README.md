@@ -1,11 +1,11 @@
 # 📚 Sistema de Biblioteca em Java (POO)
 
----
+
 Projeto desenvolvido como atividade prática da faculdade com o objetivo de aplicar os conceitos de Programação Orientada a Objetos (POO) em Java.
 
 # 👥 Integrantes
 
------
+
 - João Pedro de Souza Araujo
 - Kauã Thalles Silva de Jesus
 - Gabriel Emídio Deolindo
@@ -14,7 +14,7 @@ Projeto desenvolvido como atividade prática da faculdade com o objetivo de apli
 
 # 🎯 Objetivo
 
----
+
 Simular o funcionamento básico de um sistema de biblioteca, permitindo o gerenciamento de livros, usuários e empréstimos, utilizando boas práticas de POO como:
 
 - Encapsulamento
@@ -22,7 +22,7 @@ Simular o funcionamento básico de um sistema de biblioteca, permitindo o gerenc
 - Composição
 - Organização em classes
 
-----
+
 
 # ⚙️ Funcionalidades
 
@@ -36,7 +36,7 @@ O sistema permite:
 - 📖 Listar livros disponíveis
 - 📚 Listar livros emprestados
 
----
+
 # 🧱 Estrutura do Projeto
 
 O sistema foi desenvolvido utilizando uma estrutura orientada a objetos com as seguintes classes:
@@ -49,7 +49,7 @@ O sistema foi desenvolvido utilizando uma estrutura orientada a objetos com as s
 - Emprestimo → Representa a relação entre usuário e livro
 - Biblioteca → Classe responsável pelo controle do sistema
 - Main → Classe principal com execução do programa
----
+
 
 # 🧬 Conceitos de POO aplicados
 
@@ -68,7 +68,7 @@ O sistema foi desenvolvido utilizando uma estrutura orientada a objetos com as s
     - 1 Usuario
     - Data do empréstimo
 
---- 
+
   
 # 🖥️ Interface (Terminal)
 
@@ -83,7 +83,7 @@ O sistema funciona via terminal utilizando Scanner, com o seguinte menu:
 6 - Listar empréstimos
 0 - Sair
 ````
----
+
 # ⚠️ Regras de Negócio
 
 - ❌ Não é permitido emprestar um livro já emprestado
@@ -92,7 +92,7 @@ O sistema funciona via terminal utilizando Scanner, com o seguinte menu:
   - Professor → até 5 livros
 - ✅ Ao devolver um livro, ele volta a ficar disponível
 
----
+
 
 # 🚀 Como executar o projeto
 
@@ -112,13 +112,13 @@ javac Main.java
 ````
 java Main
 ````
----
+
 # 🛠️ Tecnologias utilizadas
 - ☕ Java
 - 📦 Programação Orientada a Objetos (POO)
 - 💻 Execução via terminal
 
----
+
 # 📌 Observações
 
 Este projeto tem fins educacionais e foi desenvolvido para praticar conceitos fundamentais de Java e POO.
