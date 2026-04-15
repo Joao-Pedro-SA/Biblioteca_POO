@@ -40,6 +40,7 @@ public abstract class Usuario {
 
 
     public void adicionarLivro(Livro livro) {
+
         livros.add(livro);
     }
 
@@ -56,6 +57,6 @@ public abstract class Usuario {
     @Override
     public String toString() {
         return "Nome: " + nome +
-                "\nData de nascimento: " + dataNasc;
+                "\nData de nascimento: " + dataNasc + "\nID: "+ getId();
     }
 }

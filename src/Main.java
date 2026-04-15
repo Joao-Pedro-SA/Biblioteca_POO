@@ -74,14 +74,15 @@ public class Main {
                     biblioteca.cadastrarUsuario(usuario);
 
                     System.out.println("Usuário cadastrado com sucesso!");
+                    System.out.println(usuario.toString());
                     break;
 
                 case 3:
-                    System.out.println("ID do usuário:");
-                    int idEmprestimo = scanner.nextInt();
+                    System.out.println("Digite Id do usuario:");
+                    int idusuario = scanner.nextInt();
                     scanner.nextLine();
 
-                    Usuario uEmprestimo = buscarUsuario(usuarios, idEmprestimo);
+                    Usuario uEmprestimo = buscarUsuario(usuarios, idusuario);
 
                     if (uEmprestimo == null) {
                         System.out.println("Usuário não encontrado.");
@@ -95,11 +96,11 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("ID do usuário:");
-                    int idDevolucao = scanner.nextInt();
+                    System.out.println("Digite Id do usuario:");
+                    idusuario = scanner.nextInt();
                     scanner.nextLine();
 
-                    Usuario uDevolucao = buscarUsuario(usuarios, idDevolucao);
+                    Usuario uDevolucao = buscarUsuario(usuarios, idusuario );
 
                     if (uDevolucao == null) {
                         System.out.println("Usuário não encontrado.");

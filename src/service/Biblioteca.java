@@ -26,8 +26,8 @@ public class Biblioteca {
         System.out.println("\n===== LIVROS =====");
 
         for (Livro livro : listagemLivros) {
-            System.out.println(livro.getTitulo() + " / " + livro.getAutor() +
-                    " | Disponível: " + livro.isDisponivel());
+            System.out.println("Titulo: "+ livro.getTitulo() + "\nAutor: " + livro.getAutor() +
+                    " \n|Disponível: " + livro.isDisponivel() + "\n --------------------");
         }
     }
 
@@ -78,7 +78,7 @@ public class Biblioteca {
 
         usuario.adicionarLivro(livro);
 
-        setDisponivel(livro, false);
+        livro.emprestar();
 
         System.out.println("Empréstimo realizado com sucesso!");
     }
@@ -100,7 +100,7 @@ public class Biblioteca {
 
                 emp.registrarDevolucao();
                 usuario.devolverLivro(livro);
-                setDisponivel(livro, true);
+                livro.devolver();
 
                 System.out.println("Livro devolvido com sucesso!");
                 return;
@@ -108,16 +108,6 @@ public class Biblioteca {
         }
 
         System.out.println("Empréstimo não encontrado.");
-    }
-
-    private void setDisponivel(Livro livro, boolean status) {
-        try {
-            java.lang.reflect.Field field = Livro.class.getDeclaredField("disponivel");
-            field.setAccessible(true);
-            field.set(livro, status);
-        } catch (Exception e) {
-            System.out.println("Erro ao atualizar disponibilidade do livro.");
-        }
     }
 
     public void listarEmprestimos() {

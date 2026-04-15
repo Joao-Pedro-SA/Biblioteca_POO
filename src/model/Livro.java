@@ -22,6 +22,14 @@ public class Livro {
         return disponivel;
     }
 
+    public void emprestar() {
+        this.disponivel = false;
+    }
+
+    public void devolver() {
+        this.disponivel = true;
+    }
+
     public String toString() {
         return "Livro{titulo= '" + titulo + "', autor='" + autor + "', disponivel=" + disponivel + "}";
     }

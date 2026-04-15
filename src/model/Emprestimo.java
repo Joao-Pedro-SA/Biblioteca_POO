@@ -22,10 +22,12 @@ public class Emprestimo {
     public LocalDate getDataDevolucao() { return dataDevolucao; }
 
     public void registrarDevolucao() {
+
         this.dataDevolucao = LocalDate.now();
     }
 
     public boolean estaAtivo() {
+
         return dataDevolucao == null;
     }
 
