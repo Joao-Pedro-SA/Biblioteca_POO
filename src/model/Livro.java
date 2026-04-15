@@ -1,19 +1,14 @@
 package model;
 
 public class Livro {
-    private int id;
     private String titulo;
     private String autor;
     private boolean disponivel;
     
     public Livro(String titulo, String autor) {
-        this.id = id;
         this.titulo = titulo;
         this.autor = autor;
         this.disponivel = true;
-    }
-    public int getId() {
-        return id;
     }
     public String getTitulo() {
         return titulo;
@@ -28,6 +23,6 @@ public class Livro {
     }
 
     public String toString() {
-        return "Livro{id=" + id + ", titulo='" + titulo + "', autor='" + autor + "', disponivel=" + disponivel + "}";
+        return "Livro{titulo= '" + titulo + "', autor='" + autor + "', disponivel=" + disponivel + "}";
     }
 }
